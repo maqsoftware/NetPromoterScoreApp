@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+    <link href="/css/survey.css" rel="stylesheet" />
+</head>
+<body>
+    <section style="width: 100%">
+
+        <div class="surveyEntryContainerCover" id="surveyEntryContainerCover" style="margin: auto; width: 83%; margin-top:50px;">
+
+        </div>
+        <div class="surveyEntryContainerCover SubmitContainerCover">
+            <div>
+                <input type="button" value="Submit" onclick="Survey.SubmitFeedback()" class="SubmitContainer" id="SubmitContainer" /> 
+                <label id="lblMessage" class="ErrorMessage_Survey"></label>
+            </div>
+        </div>   
+        <div id="selectMultipleSurvey" class="multiselect hide">
+            <div class="selectBox" onclick="Survey.showCheckboxes()">
+                <select>
+                    <option>Select an survey option</option>
+                </select>
+                <div class="overSelect"></div>
+            </div>
+            <div id="surveyOptions">
+            </div>
+        </div>
+        <input type="button" class="hide" id="btnCreateNewSurveys" onclick="Survey.renderUpdatedSurveyList()" value="submit" />             
+        <div id="application">
+            <video id="live-preview"></video>
+        </div>        
+        <!--<img id="imgCapture" width="500" height="500"/>-->        
+    </section>
+    <div id="surveyEntryContainerTemplate" data-win-control="WinJS.Binding.Template" style="display:none">
+        <div class="surveyEntryContainer">
+            <div style="width: 100%; height: 50px; display: -ms-grid; -ms-grid-columns: 0.25fr 1fr 20fr; -ms-grid-rows: 1fr">
+                <div style="font-size: 450%; font-weight: 500; text-shadow: 2px 3px 5px #333; -ms-grid-column: 2; -ms-grid-row: 1" class="SurveyCounter" data-win-bind="textContent: counter"></div>
+                <div class="SurveyTitleDiv"><span class="SurveyTitleSpan" data-win-bind="textContent: survey"></span></div>
+            </div>
+            <div style="background-color: white; height: 200px; border-radius: 20px; padding-top: 20px; padding-left: 25px; padding-right: 25px; border: 2px solid black">
+                <div style="padding-bottom: 15px; padding-left: 20px; font-size: 120%; margin-top: 10px;" class="SurveyQuestion" data-win-bind="textContent: question"></div>
+                <div style="background-color: #d8d4d4; border-radius: 20px; padding-left: 10px; height: 100px; clear: both" class="SurveyHolder">
+
+                    <div class="surveyDataContainer">
+                        <div class="rdSummaryTextConatiner">
+                            <span class="rdSummaryText rdSummaryTextLeft">Not at all likely</span>
+                            <span class="rdSummaryText rdSummaryTextCenter">Neutral</span>
+                            <span class="rdSummaryText rdSummaryTextRight">Extremely likely</span>
+
+                        </div>
+                        <div style="clear: both;">
+
+                            <span class="rdSpan rdSpanText">0</span>
+                            <span class="rdSpan rdSpanText">1</span>
+                            <span class="rdSpan rdSpanText">2</span>
+                            <span class="rdSpan rdSpanText">3</span>
+                            <span class="rdSpan rdSpanText">4</span>
+                            <span class="rdSpan rdSpanText">5</span>
+                            <span class="rdSpan rdSpanText">6</span>
+                            <span class="rdSpan rdSpanText">7</span>
+                            <span class="rdSpan rdSpanText">8</span>
+                            <span class="rdSpan rdSpanText">9</span>
+                            <span class="rdSpan rdSpanText">10</span>
+
+
+                        </div>
+                        <div data-value="-1" class="SurveyDataContainer" data-win-bind="name: SurveyId; title: Presenter">
+                            <div style="float:left"></div>
+                            <div style="position:absolute; width:75%">
+                                <div class="Group1">&nbsp;</div>
+                                <div class="Group2">&nbsp;</div>
+                                <div class="Group3">&nbsp;</div>
+                            </div>
+                            <div style="position:absolute; width:75%">
+                                <span class="rdSpan ">
+                                    <input type="radio" value="0" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="1" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="2" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="3" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="4" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="5" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="6" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="7" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="8" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="9" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                                <span class="rdSpan">
+                                    <input type="radio" value="10" title="0" data-win-bind="name: rdSurveyName" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/vaultmanager.js"></script>
+    <script src="/js/survey.js"></script>
+
+</body>
+</html>
+
+

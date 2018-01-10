@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link href="/css/admin.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function GoBack() {
+        }
+    </script>
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+</head>
+<body>
+    <section class="AdminHub">
+        <div class="AdminContainer">
+            <div class="SelectionContainer">
+                <select class="SurveySelector" onchange="Results.getResults()" id="surveyContainer"></select>
+                <input type="checkbox" id="NpsShowAll" value="Show All Surveys" onchange="Results.renderDropDown()" />
+                <label for="NpsShowAll" id="CheckLabel">Show All Surveys</label>
+                <input type="button" id="NpsSendMail" onclick="Results.closeSurvey()" value="Close Survey and Send Mail" />
+                <!--<select id="singleSurveyContainer" multiple="multiple"></select>-->
+                <div id="multiSelectDropDown" class="multiselect">
+                    <div class="selectBox" onclick="Results.showCheckboxes()">
+                        <select>
+                            <option>Select an option</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                    <div id="checkboxes">                        
+                    </div>
+                </div>
+                <input type="button" id="btnSingleSurvey" onclick="Results.renderSingleSurvey()" value="submit" />
+            </div>
+            <div class="ResultsContainer">
+                <div id="NPSArena" class="DetailsSection">
+                    <div class="NPSSection">
+                        <div>
+                            <div class="NPSText">
+                                Net Promoter Score: <div id="spanNpsScore"></div>
+                            </div>
+                        </div>
+                        <div class="NPSSubtitle">
+                            Net Promoter Score = % of Promoters - % of Detractors
+                        </div>
+                    </div>
+                    <div class="SimleyConatiner">
+                        <div class="SadSmileyContainer SmContainer SmContainer3">
+                            <div class="SmileyLegend SmContainer_1">
+                                <img src="/images/happy.png" class="Smilies" />
+                            </div>
+                            <div class="HappySmiley SmContainer_2">
+                                <span>Promoter (9-10)</span>
+                            </div>
+                            <div class="SadSmileyCounter SmContainer_3" id="spnHappyText"></div>
+                        </div>                        
+                        <div class="NormalSmileyContainer SmContainer SmContainer2">
+                            <div class="SmileyLegend SmContainer_1">
+                                <img src="/images/calm.png" class="Smilies" />
+                            </div>
+                            <div class="NormalSmiley SmContainer_2">
+                                <span>Passive (7-8)</span>
+                            </div>
+                            <div class="NormalSmileyCounter SmContainer_3" id="spnNormalText"></div>
+                        </div>
+                        <div class="HappySmileyContainer SmContainer SmContainer1">
+                            <div class="SmileyLegend SmContainer_1">
+                                <img src="/images/sad.png" class="Smilies" />
+                            </div>
+                            <div class="SadSmiley SmContainer_2">
+                                <span>Detractor (1-6)</span>
+                            </div>
+                            <div class="HappySmileyCounter SmContainer_3" id="spnSadText"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="EmotionArena">
+                    <div class="NPSSection">
+                        <div>
+                            <div class="NPSText">
+                                Net Emotion Score: <div id="spanEmotionScore"></div>
+                            </div>
+
+                        </div>
+                        <div class="NPSSubtitle">
+                            Net Emotion Score = % of Positive Emotion - % of Negative Emotion
+                        </div>
+                    </div>
+                    <div id="EmotionCounter">
+                    </div>
+                                       
+                </div>
+                <div id="gradientContainer">
+                    <div class="gradientLabel">Net Emotion Indicator</div>
+                    <ul id="gradientScale"></ul>
+                </div> 
+                <div id="NPSGradientContainer">
+                    <div class="gradientLabel">Net NPS Indicator</div>
+                    <ul id="NPSgradientScale"></ul>
+                </div> 
+            </div>
+            <div class="hideElement">This is loading</div>
+        </div>
+    </section>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

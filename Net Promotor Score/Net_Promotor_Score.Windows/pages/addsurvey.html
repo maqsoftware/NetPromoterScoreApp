@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Survey</title>
+    <!--Add CSS here-->
+    <link href="/css/addsurvey.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="NewSurveyContainer">
+        <fieldset>
+            <legend>Add Survey</legend>
+            <table id="tblSurveyFields" style="margin: auto">
+                <tr>
+                    <td>
+                        <label>Title: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtSurveyTitle" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Presenter(Email): </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtPresenter" maxlength="100" />@maqsoftware.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Training Date: </label>
+                    </td>
+                    <td>
+                        <div id="btnTrainingDate"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Training Duration: </label>
+                    </td>
+                    <td>
+                        <input type="text" value="0.5" id="txtTrainingDuration" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Survey Status: </label>
+                    </td>
+                    <td>
+                        <select id="statusMenuOptions">
+                            <option value="NotScheduled" selected="selected">Not Scheduled</option>
+                            <option value="InProgress">In Progress</option>
+                            <option value="Closed">Closed</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Survey Question: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtSurveyQuestion" value="How likely is it that you would recommend this training to a friend or colleague?"/>
+                    </td>
+                </tr>
+            </table>
+            <table id="tblSurveyControlButtons" style="margin: auto auto auto 35.4%;">
+                <tr>
+                    <td>
+                        <input type="button" onclick="AddSurvey.save()" title="Create" value="Save" />
+                    </td>
+                    <td>
+                        <input type="button" title="Cancel" onclick="AppNavigator.navigate('/pages/hub.html', {})" value="Cancel" style="margin-left:30px;" />
+                    </td>
+
+                </tr>
+            </table>
+
+        </fieldset>
+    </section>
+    <!--Add JavaScript here-->
+    <script src="/js/addSurvey.js"></script>
+</body>
+</html>

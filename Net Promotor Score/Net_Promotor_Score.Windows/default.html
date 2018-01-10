@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Net_Promoter_Score.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/appBar.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    </head>
+<body>
+    <div id="divSplashScreen" class="hideElement" style="display:none;">
+
+    </div>
+
+    <div id="divAppContainer">
+        <progress id="async-data-load" class="win-large hideElement"></progress>
+        <header id="hdAppHeader" data-win-control="WinJS.UI.HtmlControl" data-win-options="{uri: 'pages/header.html'}"></header>
+        <section id="AppFilterDrpDwn" class="hideElement"></section>
+        <section id="sAppContent"></section>
+        <footer id="ftAppFooter" data-win-control="WinJS.UI.HtmlControl" data-win-options="{uri: 'pages/footer.html'}"></footer>
+    </div>
+
+
+    <div id="AppBar" data-win-control="WinJS.UI.AppBar" data-win-options="" class="customColor">
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'cmdHome',label:'Home',icon:'home',section:'global',tooltip:'Home'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'cmdEndSurvey',label:'End Survey',icon:'refresh',section:'global',tooltip:'End Survey'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'cmdSettings',label:'Settings',icon:'settings',section:'global',tooltip:'Settings'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'cmdClearData',label:'Clear Data',icon:'refresh',section:'global',tooltip:'Clear Data'}"></button>
+
+    </div>
+    <script src="js/survey.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/fileoperations.js"></script>
+    <script src="js/admion.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/SurveyUpload.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+MainPackage=D:\NPS app\Final Version\Dev\npsapp\npsapp\Net Promotor Score\Net_Promotor_Score.Windows\bin\Release\Net_Promotor_Score.Windows_6.0.0.29_AnyCPU.appx
+SymbolPackage=D:\NPS app\Final Version\Dev\npsapp\npsapp\Net Promotor Score\Net_Promotor_Score.Windows\AppPackages\Net_Promotor_Score.Windows_6.0.0.29_Test\Net_Promotor_Score.Windows_6.0.0.29_AnyCPU.appxsym

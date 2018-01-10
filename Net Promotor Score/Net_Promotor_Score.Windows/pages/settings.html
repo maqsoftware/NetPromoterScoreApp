@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="/css/login.css" rel="stylesheet" />
+    <link href="/css/settings.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <section class="SettingsContainer">
+        <fieldset>
+            <legend>Settings</legend>
+            <table style="margin: auto">
+                <tr>
+                    <td>
+                        <label>Maximum Surveys: </label>
+                    </td>
+                    <td>
+                        <input type="number" id="txtMaxSurveys" min="1" max="100" value="2" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Survey List Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtSurveyList" maxlength="100" value="Survey" />
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>Questions List Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" value="SurveyQuestions" id="txtQuestions" maxlength="100" />
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>Results List Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" value="SurveyResults" id="txtResults" maxlength="100" />
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>AWS Access Key: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtAWSAccessKey" maxlength="100" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>AWS Secret Key: </label>
+                    </td>
+                    <td>
+                        <input type="password" id="txtAWSSecretKey" maxlength="100" />
+                    </td>
+                </tr>
+            </table>
+            <table style="margin: auto">
+                <tr>
+                    <td>
+                        <input type="button" onclick="Settings.save()" title="Save" value="Save" />
+                    </td>
+                    <td>
+                        <input type="button" title="Cancel" onclick="AppNavigator.navigate('/pages/hub.html', {})" value="Cancel" style="margin-left:30px;" />
+
+                    </td>
+
+                </tr>
+            </table>
+
+        </fieldset>
+    </section>
+
+
+    <script src="/js/vaultmanager.js" type="text/javascript"></script>
+    <script src="/js/settings.js" type="text/javascript"></script>
+</body>
+</html>

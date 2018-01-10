@@ -1,0 +1,489 @@
+﻿.AdminHub {
+    display: -ms-grid;
+    -ms-grid-columns: 120px 1fr 50px;
+    -ms-grid-rows: 120px 1fr;
+}
+
+.SelectionContainer {
+    background-color: #20B2AA;
+    padding: 30px 30px 30px 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 120px;
+}
+
+.SelectionContainer, .SendMailContainer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+
+/*.ResultsContainer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+}*/
+
+.DetailsSection {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.SurveySelector {
+    width: 1000px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    color: gray;
+    position: fixed;
+}
+
+
+
+
+
+
+.NPSSubtitle {
+    font-style: italic;
+}
+
+.GoBack {
+    color: #fff;
+    background-color: rgb(187,20,26);
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+
+.SmContainer #spnNormalText, .SmContainer #spnSadText, .SmContainer #spnHappyText {
+    font-size: 50px;
+}
+
+#NpsSendMail {
+    color: white !important;
+    background-color: #FFA500 !important;
+    height: 50px !important;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 1010px;
+}
+
+#NpsShowAll {
+    font-size: 10px;
+    font-style: italic;
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 60px;
+    color: gray;
+    float: left;
+}
+
+#CheckLabel {
+    position: absolute;
+    bottom: 9px;
+}
+
+
+
+
+
+
+
+
+/* admin.css (96, 15) */
+
+
+/* admin.css (154, 11) */
+.NPSText {
+    font-size: 3.5em;
+    color: gray;
+    text-align: center;
+}
+
+#spanNpsScore, #spanEmotionScore {
+    color: #454545;
+    display: inline-block;
+    font: 56px SEGOE UI LIGHT;
+    font-weight: bold;
+}
+
+/******************************************************************************************************************/
+
+
+
+/* admin.css (147, 11) */
+.NPSText {
+    font-size: 2.5em;
+    color: gray;
+    text-align: center;
+}
+
+/* admin.css (174, 14) */
+.NPSSection {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    top: 30%;
+}
+
+    /* New rules */
+    .HappySmileyContainer > div, .NormalSmileyContainer > div, .SadSmileyContainer > div {
+        float: left;
+        height: 70px;
+    }
+
+/* New rules */
+#spnSadText {
+    text-align: center;
+}
+
+/* New rules */
+.SmContainer_2 span {
+    position: relative;
+    top: -4px;
+}
+
+/* admin.css (58, 11) */
+.Smilies {
+    max-width: 70px;
+    max-height: 70px;
+    padding: 15px;
+}
+
+/* admin.css (217, 17) */
+.SmContainer_2 {
+    font-size: 24px;
+    width: 50%;
+    padding: 20px;
+}
+
+/* admin.css (226, 16) */
+.SmileyLegend {
+    display: inline-block;
+}
+
+
+
+
+
+/* New rules */
+.emotionContainer > div {
+    float: left;
+    height: auto;
+}
+
+/* New rules */
+.emotionContainer .emotion {
+    width: 50%;
+    padding: 1px;
+    color: gray;
+}
+
+/* New rules */
+#EmotionCounter :last-child.emotionContainer {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: currentColor;
+    border-left-color: currentColor;
+}
+
+/* New rules */
+#EmotionCounter :first-child.emotionContainer {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: currentColor;
+}
+
+/* admin.css (195, 18) */
+#EmotionCounter {
+    font: 24px SEGOE UI LIGHT;
+}
+
+/* admin.css (220, 19) */
+.SimleyConatiner {
+    background-color: white;
+}
+
+
+/* New rules */
+.emoticon {
+    max-width: 40px;
+    max-height: 40px;
+    float: left;
+    padding: 5px;
+    padding-top: 3px;
+}
+
+/* admin.css (261, 50) */
+#EmotionCounter .emotionContainer .emotioncount {
+    font: 24px "SEGOE UI Light";
+    float: right;
+    font-weight: bolder;
+}
+
+
+
+/* New rules */
+#gradientScale, #NPSgradientScale {
+    width: 100%;
+    padding: 0;
+}
+
+/* admin.css (122, 20) */
+.ResultsContainer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 100px;
+}
+
+
+.avgEmotionHighlighter {
+    border: 5px solid gray;
+}
+
+
+ul#gradientScale li, ul#NPSgradientScale li {
+    overflow: hidden;
+    position: relative;
+}
+
+    ul#gradientScale li.avgEmotionHighlighter:after, ul#NPSgradientScale li.avgEmotionHighlighter:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: gray;
+        box-shadow: 0 0 3px #666;
+        transform: rotate(-45deg);
+        top: -8px;
+        right: 5px;
+    }
+
+    ul#gradientScale li.avgEmotionHighlighter::after {
+        right: 4px;
+    }
+
+/* New rules */
+.gradientLabel {
+    margin: 0;
+    padding: 0 20px 0 0;
+    width: 100%;
+    font: 2.5em SEGOE UI LIGHT;
+    color: gray;
+}
+
+/* admin.css (254, 12) */
+#NPSArena {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    padding: 0 20px 0 0;
+}
+
+/* admin.css (261, 16) */
+#EmotionArena {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    padding: 0 20px;
+}
+
+/* admin.css (295, 21) */
+#gradientContainer {
+    clear: both;
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    padding: 0 20px 0 20px;
+}
+
+#NPSGradientContainer {
+    clear: both;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    padding: 0 20px 0 0;
+}
+/* admin.css (322, 17) */
+li.gradientBox {
+    font-size: 12px;
+    height: 49px;
+    width: 2.76em;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+/* New rules */
+#EmotionCounter :nth-child(2).emotionContainer, #EmotionCounter :nth-child(5).emotionContainer {
+    border-bottom: 1px solid;
+}
+
+    /* admin.css (366, 56) */
+    #EmotionCounter :nth-child(5).emotionContainer .emoticon {
+        max-width: 60px;
+        max-height: 60px;
+        padding: 0;
+    }
+
+#NPSgradientScale .gradientBox {
+    width: 2.84em;
+}
+
+/* admin.css (387, 25) */
+#singleSurveyContainer {
+    margin-top: 57px;
+    position: absolute;
+    left: 200px;
+}
+
+    #singleSurveyContainer option:before {
+        content: "☐ ";
+    }
+
+    #singleSurveyContainer option:checked:before {
+        content: "☑ ";
+    }
+/* New rules */
+#btnSingleSurvey {
+    margin-top: 57px;
+    position: absolute;
+    left: 650px;
+}
+.hide {
+    display: none;
+}
+
+
+/*Multiple select*/
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  background-color:#fff;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+/* New rules */
+#checkboxes label span {
+    position: relative;
+    top: -5px;
+}
+
+/* admin.css (441, 26) */
+#checkboxes label:hover {
+    background-color: #20B2AA;
+}
+
+/* New rules */
+#multiSelectDropDown {
+    width: 450px;
+    position: absolute;
+    margin-top: 53px;
+    left: 200px;
+}
+
+/* admin.css (432, 14) */
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+
+
+
+/* admin.css (144, 15) */
+.SmContainer {
+    display: inline;
+    color: gray;
+    float: left;
+    width: 100%;
+    padding-left: 22%;
+    padding-top: 15px;
+}
+
+/* admin.css (154, 69) */
+.HappySmileyContainer, .NormalSmileyContainer, .SadSmileyContainer {
+    border: 1px solid;
+    height: 108px;
+    margin-bottom: 50px;
+    font-family: SEGOE UI light;
+}
+
+/* admin.css (230, 18) */
+.AdminContainer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 40px 1fr 25px;
+}
+
+/* admin.css (239, 36) */
+#EmotionCounter .emotionContainer {
+    width: 100%;
+    height: 53px;
+    display: inline-block;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: currentColor;
+    border-left-color: currentColor;
+    float: left;
+    padding: 10px 140px 0 120px;
+    color: gray;
+}
+
+
+/* New rules */
+#EmotionCounter .emotionContainer .emotioncount {
+    display: none;
+}
+
+/* New rules */
+#EmotionCounter :nth-child(3).emotionContainer .emotioncount, #EmotionCounter :nth-child(6).emotionContainer .emotioncount, #EmotionCounter :first-child.emotionContainer .emotioncount {
+    color: gray;
+    display: block;
+    font: 50px SEGOE UI LIGHT;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* New rules */
+#EmotionCounter :nth-child(3).emotionContainer .emotioncount, #EmotionCounter :nth-child(6).emotionContainer .emotioncount {
+    margin-top: 36px;
+}

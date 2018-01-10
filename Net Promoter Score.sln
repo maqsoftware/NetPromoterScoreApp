@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedApp", "SharedApp", "{6AB2DA36-04F8-4828-8158-BB1E79AEFA88}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Net_Promoter_Score.Windows", "Net Promotor Score\Net_Promotor_Score.Windows\Net_Promoter_Score.Windows.jsproj", "{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointDataAccess", "SharePointDataAccess\SharePointDataAccess.csproj", "{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{795496CA-DBD0-4585-9C98-47D21D254240}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionRecognitionAPI", "EmotionRecognitionAPI\EmotionRecognitionAPI.csproj", "{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|ARM.Build.0 = Debug|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x64.ActiveCfg = Debug|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x64.Build.0 = Debug|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x64.Deploy.0 = Debug|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x86.ActiveCfg = Debug|x86
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x86.Build.0 = Debug|x86
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Debug|x86.Deploy.0 = Debug|x86
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|ARM.ActiveCfg = Release|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|ARM.Build.0 = Release|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|ARM.Deploy.0 = Release|ARM
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x64.ActiveCfg = Release|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x64.Build.0 = Release|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x64.Deploy.0 = Release|x64
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x86.ActiveCfg = Release|x86
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x86.Build.0 = Release|x86
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449}.Release|x86.Deploy.0 = Release|x86
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Debug|x86.Build.0 = Debug|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|ARM.Build.0 = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|x64.Build.0 = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B99D71D-A91C-475B-85CA-86CFEB10DB0E}.Release|x86.Build.0 = Release|Any CPU
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|ARM.Build.0 = Debug|ARM
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|x64.ActiveCfg = Debug|x64
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|x64.Build.0 = Debug|x64
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|x86.ActiveCfg = Debug|x86
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Debug|x86.Build.0 = Debug|x86
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|ARM.ActiveCfg = Release|ARM
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|ARM.Build.0 = Release|ARM
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|x64.ActiveCfg = Release|x64
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|x64.Build.0 = Release|x64
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|x86.ActiveCfg = Release|x86
+		{CD2626F0-BF40-4877-96AB-CDAEDAE0EDD0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9BF335D-7D3C-4AD7-BD3B-E19F558F6449} = {6AB2DA36-04F8-4828-8158-BB1E79AEFA88}
+	EndGlobalSection
+EndGlobal

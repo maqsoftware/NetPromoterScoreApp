@@ -1,0 +1,219 @@
+﻿#divHeader
+{
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 100px auto 20px;
+    max-height: 132px;
+}
+
+#divNavigation
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    display: -ms-grid;
+    -ms-grid-columns: 120px auto 1fr;
+}
+
+#divAppStatus
+{
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    margin-top: 20px;
+    font: 32px 'Segoe UI Symbol';
+}
+
+.AppOnline
+{
+    color: #3399FF;
+}
+
+    .AppOnline:after
+    {
+        content: '\E1E9';
+    }
+
+.AppOffline
+{
+    color: #AAA;
+}
+
+    .AppOffline:after
+    {
+        content: '\E1E9';
+    }
+
+#btnNav
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+#divPageTitle
+{
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    height: 100%;
+}
+
+#AppPageNameContainer
+{
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+}
+
+#divAppPageName
+{
+    font: 42px 'Segoe UI Light';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+@media screen and (-ms-view-state: snapped)
+{
+    #divAppPageName
+    {
+        font-size: 30px;
+    }
+}
+
+#divAppName
+{
+    width: 350px;
+    background-color: #BB141A;
+    color: #fff;
+    font: 32px 'Segoe UI Light';
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.NoPageName
+{
+    font: 32px 'Segoe UI Semibold' !important;
+    text-transform: none;
+}
+
+.FilterSummaryAccordion
+{
+    width: 100%;
+    background-color: #3399FF;
+    color: #fff;
+    padding: 5px 0;
+}
+
+#SelectedFilterOverview
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 89%;
+    font: 20px 'Segoe UI Light';
+    padding-left: 10px;
+}
+
+#FilterSummaryAccordionState
+{
+    display: inline-block;
+    vertical-align: middle;
+    font: 24px 'Segoe UI Symbol';
+    width: 8%;
+}
+
+.CloseNotch:after
+{
+    content: "\E019";
+}
+
+.OpenNotch:after
+{
+    content: "\E018";
+}
+
+#SelectedFilterDetail
+{    
+    height: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-top: none;
+    overflow: hidden;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 50px 10px;
+}
+
+    #SelectedFilterDetail > #SelectedFilterSummary
+    {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+.EditFilter
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    padding: 10px;
+    border-top: 1px solid silver;
+}
+
+.EditFilterIcon
+{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50px;
+    padding: 0;
+}
+
+    .EditFilterIcon, .EditFilterIcon:active, .EditFilterIcon:hover, .EditFilterIcon:focus
+    {
+        background-color: transparent;
+        border: 2px solid #444;
+    }
+
+        .EditFilterIcon:before
+        {
+            color: #444;
+            content: '\E104';
+            font: 24px 'Segoe UI Symbol';
+        }
+
+.FilterLabel
+{
+    font: 20px 'Segoe UI Light';
+    padding-left: 10px;
+}
+
+.summaryHeader
+{
+    font: 20px 'Segoe UI Light';
+}
+
+.summaryContent
+{
+    font: 14px 'Segoe UI Light';
+    color: #555;
+}
+
+#LicenseTypeSelect
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    font: 20px 'Segoe UI Light';
+}
+
+    #LicenseTypeSelect, #LicenseTypeSelect::-ms-value, #LicenseTypeSelect::-ms-expand
+    {
+        background-color: #fff;
+        color: #444;
+    }
+
+        #LicenseTypeSelect option:hover, #LicenseTypeSelect option:checked
+        {
+            background-color: #BB141A;
+            color: #fff;
+        }

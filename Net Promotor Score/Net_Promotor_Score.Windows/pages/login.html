@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="LoginContainer">
+        <div class="imageContainer">Net Promoter Score</div>
+        <div class="formControls" style="position: relative">
+            <div class="formContainer">
+                <fieldset>
+                    <legend>Login Credentials </legend>
+                    <label id="lblError" class="ErrorMessage"></label>
+                    <table style="margin: auto">
+                        <tr>
+                            <td>
+                                <label>Login: </label>
+                            </td>
+                            <td>
+                                <input type="text" id="txtUserName" maxlength="55" value=""/>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Password: </label>
+                            </td>
+                            <td>
+                                <input type="password" id="txtPassword" maxlength="35" value="" />
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Sharepoint URL: </label>
+                            </td>
+                            <td>
+                                <input type="url" id="txtUrl" value="https://testmaq.sharepoint.com/projects" />
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+                    <table style="margin: auto; margin-left:157px;">
+                        <tr>
+                            <td>
+                                <input type="button" onclick="Login.authenticate()" title="Login" value="Login" id="btnLogin" />
+                            </td>
+                            <td>
+                                <input type="button" title="Clear" value="Clear" style="margin-left:30px;" id="btnClear" onclick="Login.clear()" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <script src="/js/login.js"></script>
+</body>
+</html>

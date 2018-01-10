@@ -1,0 +1,399 @@
+﻿
+body * {
+    font-family: 'Segoe UI';
+}
+
+#divAppContainer {
+    background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.noDisplay {
+    display: none !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+#dvAppBar {
+    width: 100%;
+}
+
+#divAppContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#hdAppHeader {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+}
+
+#AppFilterDrpDwn {
+    width: 350px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    z-index: 1001;
+}
+
+#sAppContent {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+
+    #sAppContent > div {
+        padding-top: 150px;
+    }
+
+#ftAppFooter {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    color: rgb(187,20,26);
+}
+
+#divSplashScreen {
+    background-color: #BB141A;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 99999;
+}
+
+#imgSplashImage {
+    position: absolute;
+}
+
+#divInformation {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    color: #fff;
+}
+
+#async-data-load {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    color: rgb(187,20,26);
+    top:5px;
+}
+
+#prgInfoLoading {
+    color:  rgb(187,20,26);
+}
+
+#divInfoContent {
+    padding-top: 5px;
+    font: 14px 'Segoe UI';
+}
+
+.hideElement {
+    visibility: hidden;
+}
+
+.highImportance {
+    background-color: #ba141a;
+}
+
+.mediumImportance {
+    background-color: #fcd116;
+}
+
+.lowImportance {
+    background-color: #7fba00;
+}
+
+.TileLoading, .NoDataDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #BB141A;
+    z-index: 999;
+    overflow: hidden;
+    font-family: 'Segoe UI Light' !important;
+}
+
+.GridLoading {
+    background-color: transparent !important;
+}
+
+.TileLoading > progress {
+    color: #BB141A;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -29px;
+    margin-left: -30px;
+}
+
+.TileLoading .NoDataContainer {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.NoDataDiv .Frowny {
+    font-size: 60px;
+}
+
+.NoDataDiv .NoDataMessage {
+    font-size: 42px;
+}
+
+#FilterOption {
+    width: 100% !important;
+}
+
+    #FilterOption p {
+        font: 20px "Segoe UI Light";
+        padding: 9px 0 9px 20px;
+        position: relative;
+    }
+
+        #FilterOption p.activeFilterGroup {
+            background-color: #27b50c;
+            color: #fff;
+        }
+
+.FixedHeaderTable td {
+    padding: 10px 5px;
+    word-break: break-all;
+}
+
+.GridHead .FixedHeaderTable td {
+    background-color: rgb(0, 139, 242);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+    .GridHead .FixedHeaderTable td[data-column] {
+        cursor: pointer;
+    }
+
+    .GridHead .FixedHeaderTable td.activeColumn {
+        background: #003399 no-repeat 95% center;
+        background-size: 9px;
+    }
+
+.GridHead .FixedHeaderTable[data-sortorder='ASC'] td.activeColumn {
+    background-image: url(/images/sortasc.png);
+}
+
+.GridHead .FixedHeaderTable[data-sortorder='DESC'] td.activeColumn {
+    background-image: url(/images/sortdesc.png);
+}
+
+.GridBody {
+    height: 450px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+    .GridBody tr:nth-child(even) {
+        background-color: rgb(245, 250, 252);
+    }
+
+.GridDrill:before {
+    cursor: pointer;
+    content: "\E0AC";
+    font: 16pt 'Segoe UI Symbol';
+    color: #003399;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+.PipelineCoverageTile, .PartnerPipelineCoverageTile {
+    background-color: #b4009e;
+}
+
+.PipelineHealthTile {
+    background-color: #b4009e;
+}
+
+.LicenseHealthTile, .PartnerRevenueAttainmentTile {
+    background-color: #0055c4;
+}
+
+.PartnerRevenueAttainmentTop {
+    background-color: #0055c4;
+}
+
+.TopDealsTile {
+    background-color: #ff6a00;
+}
+
+.ExceptionReportTile {
+    background-color: #ff6a00;
+}
+
+.OpportunityMvmtTile {
+    background-color: #008274;
+}
+
+.MarketingImpactTile {
+    background-color: #008274;
+}
+
+.win-navbarcommand-splitbutton::before {
+    content: "\E019";
+}
+
+.splitButtonClose::before {
+    content: "\E018" !important;
+}
+/*Top Navigation*/
+
+.win-navbarcontainer-horizontal .win-navbarcontainer-viewport {
+    padding: 15px 0px;
+    -ms-scroll-snap-x: mandatory snapInterval(0%, 100%);
+    -ms-overflow-x: auto;
+    -ms-overflow-y: hidden;
+    -ms-overflow-style: none;
+    touch-action: pan-x;
+}
+
+.win-navbarcontainer-navarrow {
+    margin: 20px 0px;
+    top: 0px;
+    width: 17px;
+    height: calc(100% - 40px);
+    overflow: hidden;
+    font-size: 16pt;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-navbarcontainer-navleft {
+    left: 0px;
+    margin-right: 8px;
+}
+
+.win-navbarcontainer-navright {
+    right: 0px;
+    margin-left: 8px;
+}
+
+.win-navbarcontainer-navarrow {
+    color: rgb(92, 92, 92);
+    background-color: rgb(231, 231, 231);
+}
+
+.win-navbarcontainer-navleft::before {
+    content: "\E0E2";
+}
+
+.win-navbarcontainer-navright::before {
+    content: "\E0E3";
+}
+
+.win-navbarcontainer-horizontal .win-navbarcontainer-surface {
+    display: -ms-grid;
+    -ms-grid-columns: auto;
+    -ms-grid-rows: auto;
+}
+
+.win-navbarcommand {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr auto;
+    -ms-grid-rows: 1fr;
+}
+
+.win-navbarcontainer-horizontal .win-navbarcommand {
+    margin: 5px;
+    width: 210px;
+}
+
+.win-navbarcommand-button {
+    width: 100%;
+    position: relative;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+.win-navbarcommand-splitbutton {
+    width: 40px;
+    height: 100%;
+    font-family: "Segoe UI Symbol";
+    font-size: 11pt;
+    margin-right: 0px;
+    margin-left: 2px;
+    position: relative;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+
+.win-navbarcommand-button, .win-navbarcommand-splitbutton {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+
+
+.win-navbarcommand-button-content {
+    padding: 5px 10px;
+    display: -ms-grid;
+    position: relative;
+    -ms-grid-columns: auto 1fr;
+    -ms-grid-rows: auto;
+}
+
+.win-navbarcommand-icon {
+    width: 40px;
+    height: 40px;
+    font-family: "Segoe UI Symbol";
+    font-size: 20pt;
+    margin-right: 10px;
+    margin-left: 0px;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    color: white;
+}
+
+.win-navbarcommand-label {
+    margin: 10px 0px;
+    overflow: hidden;
+    font-size: 11pt;
+    white-space: nowrap;
+    -ms-

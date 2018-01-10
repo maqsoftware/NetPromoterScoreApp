@@ -1,0 +1,14 @@
+﻿.NewSurveyContainer #tblSurveyFields input, .NewSurveyContainer #tblSurveyFields button, #statusMenuOptions {
+    width: 319px;
+}
+/* New rules */
+.NewSurveyContainer fieldset {
+    margin: 0 auto;
+    width: 750px;
+    margin-top: 75px;
+}
+
+/* New rules */
+.NewSurveyContainer fieldset legend {
+    font: 24px SEGOE UI LIGHT;
+}

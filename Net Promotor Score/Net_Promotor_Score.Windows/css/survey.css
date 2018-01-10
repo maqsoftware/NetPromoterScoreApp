@@ -1,0 +1,312 @@
+﻿section {
+    color: black !important;
+}
+
+.rdSpan {
+    /*display: inline-block;*/
+    /*width: calc(100% / 12);*/
+}
+
+.rdSurvey {
+    border-width: 0.5px;
+    border-color: black;
+}
+
+
+.rdSummaryText {
+    display: inline-block;
+    font-style: italic;
+}
+
+.rdSummaryTextRight {
+    float: right;
+}
+
+
+.rdSummaryTextLeft {
+    float: left;
+}
+
+.surveyDataContainer {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: calc((100% / 12) * 0.5);
+}
+
+.SurveyDivUpper {
+    width: 100%;
+    height: 50px;
+    display: -ms-grid;
+    -ms-grid-columns: 0.25fr 1fr 20fr;
+    -ms-grid-rows: 1fr;
+}
+
+.SurveyCounter {
+    font-size: 450%;
+    font-weight: 500;
+    text-shadow: 2px 3px 5px #333;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    margin-top:-30px;
+}
+
+.SurveyTitleDiv {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    position: relative;
+}
+
+.SurveyTitleSpan {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    font-size: 150%;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    width: calc(100% - 30px);
+}
+
+.surveyEntryContainerCover {
+    margin: auto;
+    width: 83%;
+}
+
+.surveyEntryContainer {
+    padding-bottom:40px;
+}
+
+.SubmitContainerCover {
+    margin-top: 10px;
+}
+
+.SubmitContainer {
+    float: right;
+    width: 150px;
+}
+
+#lblMessage {
+    float: right;
+    margin-right: 10px;
+}
+
+.ErrorMessage_Survey {
+    font-size: 22px;
+    font-style: italic;
+    color: #BB141A;
+}
+
+.ErrorMessage {
+    color: #BB141A !important;
+}
+
+
+
+    .rdSpan input[type="radio"] {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+/*Camera styling*/
+#live-preview {
+display:none;
+}
+
+
+progress.withText
+{
+    color: inherit; /* Uses the same text color as the page */
+    vertical-align: text-bottom; /* Makes the bottom of the control align with the bottom of its label */
+}
+
+
+/*UI updates for survey container*/
+/* New rules */
+:last-child.rdSpan.rdSpanText {
+    padding-right: 0 !important;
+}
+
+/* survey.css (10, 14) */
+/*.rdSpanText {
+    padding-left: 8px;
+    font-weight: 600;
+    font-size: 120%;
+    padding-right: 95px !important;
+}*/
+
+/* survey.css (22, 26) */
+.rdSummaryTextConatiner {
+    position: relative;
+    width: calc((100% /12) * 11.1);
+}
+
+/* survey.css (36, 23) */
+.rdSummaryTextConatiner .rdSummaryTextCenter {
+    float: left;
+    margin-left: calc(100% - 35%);
+    display: block;
+}
+
+/* survey.css (122, 10) */
+/*.rdSpan {
+    margin-left: -3px;
+    padding-right: 80px;
+}*/
+
+/* survey.css (132, 10) */
+/*.Group1 {
+    background-color: rgb(127,20,26);
+    width: 786px;
+    margin-left: -30px;
+    height: 36px;
+    border-radius: 10px;
+    float: left;
+}*/
+
+/* survey.css (141, 10) */
+/*.Group2 {
+    background-color: #ffd800;
+    width: 222px;
+    float: left;
+    position: relative;
+    height: 36px;
+    border-radius: 10px;
+}*/
+
+/* survey.css (150, 10) */
+/*.Group3 {
+    background-color: #008C00;
+    width: 235px;
+    float: left;
+    position: relative;
+    height: 36px;
+    border-radius: 10px;
+}*/
+:last-child.rdSpan {
+    padding-right: 0;
+}
+
+
+/* survey.css (135, 14) */
+.rdSpanText {
+    padding-left: 8px;
+    font-weight: 600;
+    font-size: 120%;
+    padding-right: 7.77% !important;
+}
+
+/* survey.css (156, 10) */
+.rdSpan {
+    margin-left: -3px;
+    padding-right: 6.6%;
+}
+
+/* survey.css (162, 10) */
+.Group1 {
+    background-color: rgb(127,20,26);
+    width: 65%;
+    margin-left: -30px;
+    height: 36px;
+    border-radius: 10px;
+    float: left;
+}
+
+/* survey.css (172, 10) */
+.Group2 {
+    background-color: #ffd800;
+    width: 18%;
+    float: left;
+    position: relative;
+    height: 36px;
+    border-radius: 10px;
+}
+
+/* survey.css (182, 10) */
+.Group3 {
+    background-color: #008C00;
+    width: 18%;
+    float: left;
+    position: relative;
+    height: 36px;
+    border-radius: 10px;
+}
+
+
+/*@media (min-width:1281px) { 
+    
+.rdSpanText {    
+    padding-right: 7.95% !important;
+}
+.rdSpan {   
+    padding-right: 7%;
+}
+}*/
+
+
+
+/*Multiple select*/
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+#surveyOptions {
+  display: none;
+  border: 1px #dadada solid;
+  background-color:#fff;
+}
+
+#surveyOptions label {
+  display: block;
+}
+
+/* New rules */
+#surveyOptions label span {
+    position: relative;
+    top: -5px;
+}
+
+/* admin.css (441, 26) */
+#surveyOptions label:hover {
+    background-color: #20B2AA;
+}
+
+/* New rules */
+#selectMultipleSurvey {
+    width: 800px;
+    position: absolute;
+    margin-top: 53px;
+    left: 200px;
+}
+
+/* admin.css (432, 14) */
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+/* New rules */
+#btnCreateNewSurveys {
+    margin-top: 57px;
+    position: absolute;
+    left: 1050px;
+}
+.hide {
+    display: none;
+}
